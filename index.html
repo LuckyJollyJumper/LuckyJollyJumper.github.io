@@ -4,27 +4,28 @@
 <head>
     <link rel="stylesheet" href="style.css"/>
     <script src="script.js"></script>
+    <link rel="icon" href="images/profile.png">
     <title>Lucs awesome portfolio!</title>
 </head>
 
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <img src="images/profile.png" alt="Lucs profile picture"> 
+        <a href="javascript:showProject('about')"><img src="images/profile.png" alt="Lucs profile picture" class="logo"></a> 
         <header>Projects</header>
-        <a href="javascript:showProject('hexed')">HEXED</a>
-        <a href="javascript:showProject('rhytmquest')">Rhythm quest</a>
-        <a href="javascript:showProject('rhytmquest')">Undercooked</a>
-        <a href="javascript:showProject('rhytmquest')">Language Learner</a>
-        <a href="javascript:showProject('rhytmquest')">AR boardgame</a>
-        <a href="javascript:showProject('rhytmquest')">P's paradox</a>
-        <a href="javascript:showProject('rhytmquest')">Race cars</a>
-        <a href="javascript:showProject('rhytmquest')">Optimal planet</a>
-        <a href="javascript:showProject('rhytmquest')">D&D virtual board</a>
+        <a class="menuitem" href="javascript:showProject('hexed')">HEXED</a>
+        <a class="menuitem" href="javascript:showProject('rhytmquest')">Rhythm quest</a>
+        <a class="menuitem" href="javascript:showProject('undercooked')">Undercooked</a>
+        <a class="menuitem" href="javascript:showProject('languagelearner')">Language Learner</a>
+        <a class="menuitem" href="javascript:showProject('arboardgame')">AR boardgame</a>
+        <a class="menuitem" href="javascript:showProject('psparadox')">P's paradox</a>
+        <a class="menuitem" href="javascript:showProject('racecars')">Race cars</a>
+        <a class="menuitem" href="javascript:showProject('')">Optimal planet</a>
+        <a class="menuitem" href="javascript:showProject('dndvirtualboard')">D&D virtual board</a>
     </div>
 
     <main>
-        <div id="about">
+        <div id="about" class="project">
             <h1>About me</h1>
             <p>I am a versatile software science and game design student, who loves to be creative and make software that can be enjoyed by the user.</p>
             <p>I have done projects and have experience in the following languages: C#, c++, Java, Haskell, GDScript, Python, SQL, javascript, HTML</p>
@@ -109,40 +110,53 @@
         </div>
         <div>
             <div id="hexed" class="project hidden">
-                <p>HEXED</p>
-                Physcial 2-6 player boardgame, where players need to explore and gather resources in a hexagonal world by building structures or using magic to 
-                gain the most victory points. Each player gets personalised missions to earn extra victory points but, beware of the monsters that 
-                lurks in the forests. 
+                <h1>HEXED</h1>
+                <p>
+                    Physcial 2-6 player boardgame, where players need to explore and gather resources in a hexagonal world by building structures or using magic to 
+                    gain the most victory points. Each player gets personalised missions to earn extra victory points but, beware of the monsters that 
+                    lurks in the forests. 
+                </p>
             </div>
             <div id="rhytmquest" class="project hidden">
-                <p>Rhythm Quest</p>
+                <h1>Rhythm Quest</h1>
+                <p>
                 A singleplayer roguelike deckbuilder game made in Unity using Fmod aimed at learning the exam material presented in the course Sound 
                 and Music Technology at Utrecht University.
+                </p>
+                <div class="slideshow">
+                    <img src="images/rhytmquestmain.png" alt="Rhythm quest title screen"/>
+                    <img src="images/rhytmquestmain.png" alt="Rhythm quest title screen"/>
+                </div>
             </div>
             <div id="undercooked" class="project hidden">
-                <p>Overcooked</p>
-                A 2 player cooperative game with the goal of making the most pizzas under a certain time limit. Made to analyse and 
-                model player behaviour and difficulty of the maps in the game. Made for the course AI for Game technology, Utrecht university.
+                <h1>Overcooked</h1>
+                <p>
+                    A 2 player cooperative game with the goal of making the most pizzas under a certain time limit. Made to analyse and
+                    model player behaviour and difficulty of the maps in the game. Made for the course AI for Game technology, Utrecht university.
+                </p>
             </div>
             <div id="psparadox" class="project hidden">
-                <p>P's Paradox</p>
+                <h1>P's Paradox</h1>
                 An animation made in Blender in 10 weeks using own created mocap data. Won the first place of the course Computer Animation at Utrecht University.
                 <a href="https://youtu.be/qwBw2o05BQQ?si=rEW8bWaVbr4EnWr6">Youtube link</a>
             </div>
             <div id="arboardgame" class="project hidden">
-                <p>Untitled boardgame</p>
+                <h1>Untitled boardgame</h1>
                 A very simple 4 player bossbattle boardgame made for a user experiment to test augmented reality dice compared to normal and digital dice. Made to use
                 only a pencil, the sheet of the board and anything to indicate the players and boss. The idea is to 
             </div>
             <div id="racecars" class="project hidden">
-                <p>Race cars</p>
+                <h1>Race cars</h1>
                 2 Physcial build cars with ramps in the front that can be controlled via a website on mobile phones. Sensors in the cars allow for a variety of
                 gamemodes. Capture the flag using sensors detecting colors on the ground and sensors detecting being flipped etc.
             </div>
             <div id="dndvirtualboard" class="project hidden">
-                <p>D&D virtual board</p>
+                <h1>D&D virtual board</h1>
                 A program that acts as in interactive board where the user can add their own sprites and move them around the board to supplement their role playing
                 games that can not be done physcially. Made in Java using JavaFX.
+            </div>
+            <div id="languagelearner" class="project hidden">
+
             </div>
         </div>
     </main> 

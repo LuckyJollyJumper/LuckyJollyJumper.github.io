@@ -1,7 +1,15 @@
+@font-face {
+  font-family: "Sansation";
+  src:
+    local("Sansation"),
+    url("sansation/Sansation-Regular.ttf") format("opentype"),
+}
+
 body{
   --sidebarwidth: 200px;
   margin: 0;
   position: relative;
+  font-family: Sansation, sans-serif;
 }
 
 .sidenav {
@@ -20,7 +28,7 @@ body{
  
 }
 
-.sidenav a {
+.sidenav .menuitem {
   width: max-content;
   padding: 6px 6px 6px 32px;
   text-decoration: none;
@@ -29,7 +37,7 @@ body{
   display: block;
 }
 
-.sidenav a:hover {
+.sidenav .menuitem:hover {
   color: #f1f1f1;
 }
 
@@ -47,19 +55,30 @@ main {
   flex-grow: 1;
   margin-left: var(--sidebarwidth);
   padding: 10px;
+}
 
+.slideshow{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  grid-gap: 10px;
 }
 
 img {
+  max-width: 100%;
+}
+
+.logo{
   display: block;
   max-width: 50%;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
 .project{
   
+}
+.project > *:not(.slideshow){
+  max-width: 800px;
 }
 
 .hidden{
