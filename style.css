@@ -1,16 +1,27 @@
+body{
+  --sidebarwidth: 200px;
+  margin: 0;
+  position: relative;
+}
+
 .sidenav {
-  height: 100%;
-  width: 200px;
+  height: 100vh;
+  width: min-content;
+  /* height: 100%; */
+  width: var(--sidebarwidth);
   position: fixed;
-  z-index: 1;
   top: 0;
-  left: 0;
+  /* z-index: 1; */
+  /* top: 0; */
+  /* left: 0; */
   background-color: #719f39;
   overflow-x: hidden;
   padding-top: 20px;
+ 
 }
 
-.sidenav item {
+.sidenav a {
+  width: max-content;
   padding: 6px 6px 6px 32px;
   text-decoration: none;
   font-size: 18px;
@@ -18,11 +29,12 @@
   display: block;
 }
 
-.sidenav item:hover {
+.sidenav a:hover {
   color: #f1f1f1;
 }
 
 .sidenav header {
+  width: max-content;
   padding: 6px 6px 6px 32px;
   text-decoration: none;
   font-size: 30px;
@@ -31,9 +43,11 @@
   display: block;
 }
 
-.main {
-  display: flex; 
-  justify-content: left;
+main {
+  flex-grow: 1;
+  margin-left: var(--sidebarwidth);
+  padding: 10px;
+
 }
 
 img {
@@ -44,7 +58,10 @@ img {
   margin-right: auto;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav item {font-size: 18px;}
+.project{
+  
+}
+
+.hidden{
+  display: none;
 }
