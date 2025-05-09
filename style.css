@@ -10,6 +10,7 @@ body{
   margin: 0;
   position: relative;
   font-family: Sansation, sans-serif;
+  background: #bfd5a3;
 }
 
 .sidenav {
@@ -74,8 +75,8 @@ img {
   margin-right: auto;
 }
 
-.project{
-  
+.project h1 {
+  color: #1f5307;
 }
 .project > *:not(.slideshow){
   max-width: 800px;
